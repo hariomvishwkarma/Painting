@@ -1,0 +1,45 @@
+@media only screen and (max-width:768px) {
+    a.navbar-icon-svg-3 {
+        display: none;
+    }
+    a.navbar-icon-svg-5 {
+        display: none;
+    }
+    img.main-logo {
+        width: 67%;
+    }
+    img.img-main-image {
+        height: 592px;
+    }
+    .image-banner-shop-npw {
+        display: none;
+    }
+    .left-hamburger-button {
+        width: 62%;
+    }
+    .container-about {
+        display: block;
+    }
+    .box-about {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .fifth-container-right-content {
+        width: 70%;
+    }
+    .sixth-container {
+        padding: 0 50px;
+    }
+    .main-box-main-footer-1 {
+        width: 50%;
+    }
+    .main-box-main-footer-2 {
+        width: 50%;
+    }
+    .main-box-main-footer {
+        width: 30%;
+    }
+    .mainfooter.display-flex {
+        width: 500px;
+    }
+}

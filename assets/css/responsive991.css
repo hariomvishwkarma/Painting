@@ -1,0 +1,23 @@
+@media only screen and (max-width:991px) {
+    .feature-iamge {
+        width: 33%;
+    }
+    .fifth-container {
+        height: 100%;
+    }
+    .box-feature-image-hover-content {
+        display: none;
+    }
+    .mainfooter.display-flex {
+        width: 700px;
+    }
+    .main-box-main-footer-1 {
+        width: 40%;
+    }
+    .main-box-main-footer-2 {
+        width: 40%;
+    }
+    .main-box-main-footer {
+        width: 20%;
+    }
+}

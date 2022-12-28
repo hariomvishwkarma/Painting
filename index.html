@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Painting</title>
+    <link rel="stylesheet" href='assets/css/style.css'>
+    <link rel="stylesheet" href="assets/js/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/responsive1440.css">
+    <link rel="stylesheet" href='assets/css/responsive1196px.css'>
+    <link rel="stylesheet" href='assets/css/responsive1024.css'>
+    <link rel="stylesheet" href="assets/css/responsive991.css">
+    <link rel="stylesheet" href='assets/css/responsive768.css'>
+    <link rel="stylesheet" href="assets/css/responsive575.css">
+    <link rel="stylesheet" href='assets/css/responsive425.css'>
+    <link rel="stylesheet" href='assets/css/responsive375.css'>
+    <link rel="stylesheet" href="assets/css/responsive320.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickslider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slickslider -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        .rotate {
+            -moz-transition: all .3s linear;
+            -webkit-transition: all .3s linear;
+            transition: .3s linear;
+        }
+        
+        .rotate.down {
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .fixed-header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-body">
+        <!-- hamburger left toggle// -->
+        <div class="hamburger-left-button">
+            <div class="left-hamburger-button">
+                <div class="times-icon-3">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <ul class="left-hamburger-button-ul">
+                    <li><a href="#" class="left-hamburger-button-list-a">Demo</a><i id="demo-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-1">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="left-hamburger-button-list-a">Shop</a><i id="shop-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-2">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="left-hamburger-button-list-a">Products</a><i id="products-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-3">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="left-hamburger-button-list-a">Blog</a><i id="blog-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-4">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="left-hamburger-button-list-a">Page</a><i id="page-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-5">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="left-hamburger-button-list-a">USD</a><i id="usd-open" class="fa-thin fa-plus rotate"></i></li>
+                    <div class="demo-button-list-6">
+                        <ul>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Fashion</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Minimog Store</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                            <li class="demo-button-li"><a class="demo-button-list-link" href="#">Header Layout</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <h5 class="last-heading-left-hemburger"><i class="fa-regular fa-user"></i>My Account</h5>
+                <div class="box-account">
+                    <a class="sing-in-button" href="#">Sign In</a>
+                    <a class="creat-account--button" href="#">Creat An Account</a>
+                </div>
+            </div>
+        </div>
+        <!-- hamberger  right toggle// -->
+        <div class="hamburger-right-button">
+            <div class="right-hamburger-button">
+                <div class="times-icon-2">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <h4>Currency</h4>
+                <ul class="right-hamburger-button-ul">
+                    <li><a href="#" class="right-hamburger-button-list-a">GBP</a></li>
+                    <li><a href="#" class="right-hamburger-button-list-a">EUR</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <!-- announcement bar -->
+            <div class="announcement-bar">
+                <p class="am-b-peragraph">Where to Buy Cool, Affordable Artwork Online</p>
+                <div class="times-icon">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- main header// -->
+            <div class="main-header">
+                <div class="main-navigation-bar">
+                    <div class="hamburger-icon">
+                        <svg width="22px" height="22px" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"></path>
+                    </svg>
+                    </div>
+                    <div class="logo-navigation-bar">
+                        <a href="#"><img class="main-logo" src='assets/image/dark-logo_1 (1).png'></a>
+                    </div>
+                    <div class="content-navbar">
+                        <ul class="navbar-ul">
+                            <li class="navbar-ul-demo"><a class="a-navbar-url" href="#">Demo<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="main-demo-button-hover">
+                                    <div class="demo-button-hover">
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Home V1</a></li>
+                                                <li><a href="#">Home V2</a></li>
+                                                <li><a href="#">Home V3</a></li>
+                                                <li><a href="#">HOme V4</a></li>
+                                                <li><a href="#">Home V5</a></li>
+                                                <li><a href="#">Home V6</a></li>
+                                                <li><a href="#">Home V7</a></li>
+                                                <li><a href="#">Home V8</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Home V9</a></li>
+                                                <li><a href="#">Home V10</a></li>
+                                                <li><a href="#">Home V11</a></li>
+                                                <li><a href="#">HOme V12</a></li>
+                                                <li><a href="#">Home V3</a></li>
+                                                <li><a href="#">Home Megastore</a></li>
+                                                <li><a href="#">Home Megamor</a></li>
+                                                <li><a href="#">Home Supergear</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Active Wear Store</a></li>
+                                                <li><a href="#">Furniture Store</a></li>
+                                                <li><a href="#">Case Phone Store</a></li>
+                                                <li><a href="#">Socks Store</a></li>
+                                                <li><a href="#">Bedding Store</a></li>
+                                                <li><a href="#">Sneaker Store</a></li>
+                                                <li><a href="#">Jewelry Store</a></li>
+                                                <li><a href="#">Bra Store</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Backpack Store</a></li>
+                                                <li><a href="#">Houseware Store</a></li>
+                                                <li><a href="#">Hat Store</a></li>
+                                                <li><a href="#">Bag Store</a></li>
+                                                <li><a href="#">Paintme Store</a></li>
+                                                <li><a href="#">Watch Store</a></li>
+                                                <li><a href="#">Baby Store</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Book Store</a></li>
+                                                <li><a href="#">Mirror Store</a></li>
+                                                <li><a href="#">Header Layout 1</a></li>
+                                                <li><a href="#">Header Layout 2</a></li>
+                                                <li><a href="#">Header Layout 3</a></li>
+                                                <li><a href="#">Header Layout 4</a></li>
+                                                <li><a href="#">Header Layout 5</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Header Layout 6</a></li>
+                                                <li><a href="#">Header Layout 7</a></li>
+                                                <li><a href="#">Header Layout 8</a></li>
+                                                <li><a href="#">Header Layout 9</a></li>
+                                                <li><a href="#">Header Layout 10</a></li>
+                                                <li><a href="#">Header Layout 11</a></li>
+                                                <li><a href="#">Header Layout 12</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-ul-shop"><a class="a-navbar-url" href="#">Shop<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="main-demo-button-hover">
+                                    <div class="demo-button-hover">
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Grid Layout</a></li>
+                                                <li><a href="#">Masonry Layout</a></li>
+                                                <li><a href="#">Packery Layout</a></li>
+                                                <li><a href="#">List View</a></li>
+                                                <li><a href="#">Grid 2 Column</a></li>
+                                                <li><a href="#">Grid 3 Column</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Grid 4 Column</a></li>
+                                                <li><a href="#">Grid 5 Column</a></li>
+                                                <li><a href="#">Left Sidebar</a></li>
+                                                <li><a href="#">Right Sidebar</a></li>
+                                                <li><a href="#">Canvas Sidebar</a></li>
+                                                <li><a href="#">List-Left Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Numbered Pagination</a></li>
+                                                <li><a href="#">Load More Button</a></li>
+                                                <li><a href="#">Infinit Scrolling</a></li>
+                                                <li><a href="#">Collection & Product</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Hover Style 1</a></li>
+                                                <li><a href="#">Hover Style 2</a></li>
+                                                <li><a href="#">Hover Style 3</a></li>
+                                                <li><a href="#">Hover Style 4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-ul-product"><a class="a-navbar-url" href="#">Product<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="main-demo-button-hover">
+                                    <div class="demo-button-hover">
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Product Layout 1</a></li>
+                                                <li><a href="#">Product Layout 2</a></li>
+                                                <li><a href="#">Product Layout 3</a></li>
+                                                <li><a href="#">Product Layout 4</a></li>
+                                                <li><a href="#">Product Bottom Thumbnails</a></li>
+                                                <li><a href="#">Product Right Thumbnails</a></li>
+                                                <li><a href="#">Product Without Thumbnails</a></li>
+                                                <li><a href="#">Product Tab Accordions</a></li>
+                                                <li><a href="#">Tab Accordions 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Product Images Swatch</a></li>
+                                                <li><a href="#">Product Full Width</a></li>
+                                                <li><a href="#">Custom Tab 1</a></li>
+                                                <li><a href="#">Custom Tab 2</a></li>
+                                                <li><a href="#">Product Upsell</a></li>
+                                                <li><a href="#">Real Time Visitors</a></li>
+                                                <li><a href="#">Buy More Save More</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">Simple Product</a></li>
+                                                <li><a href="#">Variable Product</a></li>
+                                                <li><a href="#">Grouped Product</a></li>
+                                                <li><a href="#">Bundle Product</a></li>
+                                                <li><a href="#">Product Video</a></li>
+                                                <li><a href="#">Inner Zoom #1</a></li>
+                                                <li><a href="#">Inner Zoom #2</a></li>
+                                                <li><a href="#">External Zoom</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box-demo-hover">
+                                            <ul>
+                                                <li><a href="#">PhotoSwipe Popup</a></li>
+                                                <li><a href="#">Back In Stock Notification</a></li>
+                                                <li><a href="#">Size Guide HTML</a></li>
+                                                <li><a href="#">Ask A Question</a></li>
+                                                <li><a href="#">Delivery & Return</a></li>
+                                                <li><a href="#">Buy Now Button</a></li>
+                                                <li><a href="#">Dynamic Checkout Buttons</a></li>
+                                                <li><a href="#">Count Down Timer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-ul-blog"><a class="a-navbar-url" href="#">Blog<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="main-demo-button-hover1">
+                                    <div class="box-demo-hover1">
+                                        <ul>
+                                            <li><a href="#">Post List</a></li>
+                                            <li><a href="#">Grid 3 Columns</a></li>
+                                            <li><a href="#">Grid 4 Columns</a></li>
+                                            <li><a href="#">Gird With Sidebar</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-ul-page"><a class="a-navbar-url" href="#">Page<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="main-demo-button-hover2">
+                                    <div class="box-demo-hover2">
+                                        <ul>
+                                            <li><a href="#">About V1</a></li>
+                                            <li><a href="#">About V2</a></li>
+                                            <li><a href="#">About V3</a></li>
+                                            <li><a href="#">About V4</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">404 Page</a></li>
+                                            <li><a href="#">Contect Us</a></li>
+                                            <li><a href="#">Find A Store</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-icon">
+                        <a class="navbar-icon-svg-1" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.8438 19.3203C21.0781 19.5286 21.0781 19.75 20.8438 19.9844L19.9844 20.8438C19.75 21.0781 19.5286 21.0781 19.3203 20.8438L14.5938 16.1172C14.4896 16.013 14.4375 15.9089 14.4375 15.8047V15.2578C12.901 16.5859 11.1302 17.25 9.125 17.25C6.88542 17.25 4.97135 16.4557 3.38281 14.8672C1.79427 13.2786 1 11.3646 1 9.125C1 6.88542 1.79427 4.97135 3.38281 3.38281C4.97135 1.79427 6.88542 1 9.125 1C11.3646 1 13.2786 1.79427 14.8672 3.38281C16.4557 4.97135 17.25 6.88542 17.25 9.125C17.25 11.1302 16.5859 12.901 15.2578 14.4375H15.8047C15.9349 14.4375 16.0391 14.4896 16.1172 14.5938L20.8438 19.3203ZM4.71094 13.5391C5.9349 14.763 7.40625 15.375 9.125 15.375C10.8438 15.375 12.3151 14.763 13.5391 13.5391C14.763 12.3151 15.375 10.8438 15.375 9.125C15.375 7.40625 14.763 5.9349 13.5391 4.71094C12.3151 3.48698 10.8438 2.875 9.125 2.875C7.40625 2.875 5.9349 3.48698 4.71094 4.71094C3.48698 5.9349 2.875 7.40625 2.875 9.125C2.875 10.8438 3.48698 12.3151 4.71094 13.5391Z" fill="#000000"></path></svg><span class="hover-search-navbar-icon-svg-1">search</span></a>
+                        <a class="navbar-icon-svg-2" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5156 12.875C15.9479 12.875 17.1719 13.3958 18.1875 14.4375C19.2292 15.4531 19.75 16.6771 19.75 18.1094V19.125C19.75 19.6458 19.5677 20.0885 19.2031 20.4531C18.8385 20.8177 18.3958 21 17.875 21H4.125C3.60417 21 3.16146 20.8177 2.79688 20.4531C2.43229 20.0885 2.25 19.6458 2.25 19.125V18.1094C2.25 16.6771 2.75781 15.4531 3.77344 14.4375C4.8151 13.3958 6.05208 12.875 7.48438 12.875C7.82292 12.875 8.31771 12.9792 8.96875 13.1875C9.64583 13.3958 10.3229 13.5 11 13.5C11.6771 13.5 12.3542 13.3958 13.0312 13.1875C13.7083 12.9792 14.2031 12.875 14.5156 12.875ZM17.875 19.125V18.1094C17.875 17.1979 17.5365 16.4167 16.8594 15.7656C16.2083 15.0885 15.4271 14.75 14.5156 14.75C14.4375 14.75 14.0208 14.8542 13.2656 15.0625C12.5365 15.2708 11.7812 15.375 11 15.375C10.2188 15.375 9.45052 15.2708 8.69531 15.0625C7.96615 14.8542 7.5625 14.75 7.48438 14.75C6.57292 14.75 5.77865 15.0885 5.10156 15.7656C4.45052 16.4167 4.125 17.1979 4.125 18.1094V19.125H17.875ZM14.9844 10.6094C13.8906 11.7031 12.5625 12.25 11 12.25C9.4375 12.25 8.10938 11.7031 7.01562 10.6094C5.92188 9.51562 5.375 8.1875 5.375 6.625C5.375 5.0625 5.92188 3.73438 7.01562 2.64062C8.10938 1.54688 9.4375 1 11 1C12.5625 1 13.8906 1.54688 14.9844 2.64062C16.0781 3.73438 16.625 5.0625 16.625 6.625C16.625 8.1875 16.0781 9.51562 14.9844 10.6094ZM13.6562 3.96875C12.9271 3.23958 12.0417 2.875 11 2.875C9.95833 2.875 9.07292 3.23958 8.34375 3.96875C7.61458 4.69792 7.25 5.58333 7.25 6.625C7.25 7.66667 7.61458 8.55208 8.34375 9.28125C9.07292 10.0104 9.95833 10.375 11 10.375C12.0417 10.375 12.9271 10.0104 13.6562 9.28125C14.3854 8.55208 14.75 7.66667 14.75 6.625C14.75 5.58333 14.3854 4.69792 13.6562 3.96875Z" fill="#000000"></path></svg><span class="hover-search-navbar-icon-svg-2">Sign In</span></a>
+                        <a class="navbar-icon-svg-3" href="#"><svg width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg><span class="hover-search-navbar-icon-svg-3">My Wish List</span></a>
+                        <a class="navbar-icon-svg-4" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.95 6H19.7V17.875C19.7 18.7344 19.3875 19.4635 18.7625 20.0625C18.1635 20.6875 17.4344 21 16.575 21H5.325C4.46563 21 3.72344 20.6875 3.09844 20.0625C2.49948 19.4635 2.2 18.7344 2.2 17.875V6H5.95C5.95 4.61979 6.43177 3.44792 7.39531 2.48438C8.3849 1.49479 9.56979 1 10.95 1C12.3302 1 13.5021 1.49479 14.4656 2.48438C15.4552 3.44792 15.95 4.61979 15.95 6ZM13.1375 3.8125C12.5385 3.1875 11.8094 2.875 10.95 2.875C10.0906 2.875 9.34844 3.1875 8.72344 3.8125C8.12448 4.41146 7.825 5.14062 7.825 6H14.075C14.075 5.14062 13.7625 4.41146 13.1375 3.8125ZM17.825 17.875V7.875H15.95V9.4375C15.95 9.69792 15.8589 9.91927 15.6766 10.1016C15.4943 10.2839 15.2729 10.375 15.0125 10.375C14.7521 10.375 14.5307 10.2839 14.3484 10.1016C14.1661 9.91927 14.075 9.69792 14.075 9.4375V7.875H7.825V9.4375C7.825 9.69792 7.73385 9.91927 7.55156 10.1016C7.36927 10.2839 7.14792 10.375 6.8875 10.375C6.62708 10.375 6.40573 10.2839 6.22344 10.1016C6.04115 9.91927 5.95 9.69792 5.95 9.4375V7.875H4.075V17.875C4.075 18.2135 4.19219 18.5 4.42656 18.7344C4.68698 18.9948 4.98646 19.125 5.325 19.125H16.575C16.9135 19.125 17.2 18.9948 17.4344 18.7344C17.6948 18.5 17.825 18.2135 17.825 17.875Z" fill="#000000"></path></svg><span class="hover-search-navbar-icon-svg-4">My Cart</span></a>
+                        <a class="navbar-icon-svg-5" href="#"><svg width="20px" height="20px" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main  -->
+        <div class="main">
+            <!-- image banner// -->
+            <div class="main-image-banner-slider">
+                <div class="main-banner">
+                    <img class="img-main-image" src='assets/image/h_art_slide_01.jpg' alt="" width="100%">
+                    <div class="container-image-banner">
+                        <div class="content-image-banner">
+                            <h2 class="heading-container-image-banner">
+                                New Bold Art Photos
+                            </h2>
+                            <p class="peragraph-container-image-banner">
+                                The best thing since plastic flower
+                            </p>
+                            <a class="link-container-image-banner" href="">Explore All Things</a>
+                        </div>
+                        <div class="image-banner-shop-npw">
+                            <span>The ReCotton Tee <a class="image-banner-link-shop-now" href="#">Shop Now</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-banner">
+                    <img class="img-main-image" src='assets/image/h_art_slide_02.jpg' alt="" width="100%">
+                    <div class="container-image-banner">
+                        <div class="content-image-banner">
+                            <h2 class="heading-container-image-banner">
+                                New Bold Art Photos
+                            </h2>
+                            <p class="peragraph-container-image-banner">
+                                The best thing since plastic flower
+                            </p>
+                            <a class="link-container-image-banner" href="">Explore All Things</a>
+                        </div>
+                        <div class="image-banner-shop-npw">
+                            <span>The ReCotton Tee <a class="image-banner-link-shop-now" href="#">Shop Now</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-banner">
+                    <img class="img-main-image" src='assets/image/h_art_slide_03.jpg' alt="" width="100%">
+                    <div class="container-image-banner">
+                        <div class="content-image-banner">
+                            <h2 class="heading-container-image-banner">
+                                New Bold Art Photos
+                            </h2>
+                            <p class="peragraph-container-image-banner">
+                                The best thing since plastic flower
+                            </p>
+                            <a class="link-container-image-banner" href="">Explore All Things</a>
+                        </div>
+                        <div class="image-banner-shop-npw">
+                            <span>The ReCotton Tee <a class="image-banner-link-shop-now" href="#">Shop Now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second container about  -->
+            <div class="container-about">
+                <div class="box-about">
+                    <img class="box-about-image" src='assets/image/minimog-solid-icon.png' alt="">
+                    <div class="box-about-content">
+                        <h4 class="heading-about">Unique Art</h4>
+                        <p class="paragraph-about">Free Shipping for orders over £130</p>
+                    </div>
+                </div>
+                <div class="box-about">
+                    <img class="box-about-image" src='assets/image/minimog-solid-icon.png' alt="">
+                    <div class="box-about-content">
+                        <h4 class="heading-about">Support Artists</h4>
+                        <p class="paragraph-about">Free Shipping for orders over £130</p>
+                    </div>
+                </div>
+                <div class="box-about">
+                    <img class="box-about-image" src='assets/image/minimog-solid-icon.png' alt="">
+                    <div class="box-about-content">
+                        <h4 class="heading-about">Secure Shopping</h4>
+                        <p class="paragraph-about">Free Shipping for orders over £130</p>
+                    </div>
+                </div>
+                <div class="box-about">
+                    <img class="box-about-image" src='assets/image/minimog-solid-icon.png' alt="">
+                    <div class="box-about-content">
+                        <h6 class="heading-about">Free Shipping</h6>
+                        <p class="paragraph-about">Free Shipping for orders over £130</p>
+                    </div>
+                </div>
+            </div>
+            <!-- third container  -->
+            <div class="third-container-painting-prints-shop-now">
+                <div class="container-painting-prints-shop">
+                    <div class="painting-prints-width-50-percent">
+                        <img class="painting-prints-images" src="assets/image/h_art_box_01.jpg" alt="">
+                        <div class="heading-box-about">
+                            <h2 class="painting-print-heading">Paintings</h2>
+                            <a href="#" class="paniting-prints-shop-now">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="painting-prints-width-50-percent">
+                        <img class="painting-prints-images" src="assets/image/h_art_box_02.jpg" alt="">
+                        <div class="heading-box-about">
+                            <h2 class="painting-print-heading">Prints</h2>
+                            <a href="#" class="paniting-prints-shop-now">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth container  -->
+            <div class="fourth-main-container-feature-image">
+                <h2 class="fourth-container-main-heading">Featured Artworks</h2>
+                <div class="fourth-container-feature-image">
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_01.jpg' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_06.jpg' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_13.png' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_4.jpg' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_15.png' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_12.png' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_14.png' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-iamge">
+                        <div class="box-image">
+                            <img class="img-feature-image" src='assets/image/product_artwork_16.png' alt="">
+                            <div class="box-feature-image-hover-content">
+                                <div class="feature-image-hover-side-open">
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-star"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="fa-solid fa-code-compare"></i></a>
+                                    <a class="url-feature-imge-hover" href="#"><i class="far fa-eye"></i></a>
+                                </div>
+                                <div class="feature-imge-hover-add-to-cart-button">
+                                    <button class="feature-imge-add-to-cart-button">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-feature-container">
+                            <a href="#" class="text-feature-painting-name">
+                            Sad Blonde Girl
+                        </a>
+                            <p class="text-feature-painting-price">
+                                $75.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-container-shop-now-button">
+                    <a class="fourth-container-url-shop-now" href="#">Shop Now</a>
+                </div>
+            </div>
+            <!-- fifth container  -->
+            <div class="fifth-container-main">
+                <div class="fifth-container">
+                    <div class="fifth-container-left">
+                        <img src='assets/image/h_art_cta.jpg' class="fifth-container-image">
+                    </div>
+                    <div class="fifth-container-right">
+                        <div class="fifth-container-right-content">
+                            <h2 class="fifth-container-right-heading">Our passion is your inspiration
+                            </h2>
+                            <p class="fifth-container-right-paragraph">
+                                With each Livary Wall we send you our passion for beautiful things for your home. The content of each wall is personally and individually agreed with the Creators.
+                            </p>
+                            <a href="#" class="fifth-container-right-read-more-url">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sixth container -->
+            <div class="sixth-container">
+                <h2 class="testimonial-slider-heading">What People Are Saying</h2>
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_10-50x50_1.png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_9-50x50.png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_13-50x50 (1).png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_10-50x50_1.png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_9-50x50.png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                    <div class="testimonial-slider-box">
+                        <div class="testimonial-slder-star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-slider-paragraph">
+                            "Short dress in a printed viscose weave with a round neckline opening with a button at the back of the seams"
+                        </p>
+                        <h5 class="testimonial-slider-rating-name">
+                            Julia S.
+                        </h5>
+                        <img src='assets/image/product_artwork_13-50x50 (1).png' alt="" class="testimonil-slider-rating-image">
+                        <p class="testimonial-slider-rating-detail">Fashion Figure Floral Girl</p>
+                    </div>
+                </div>
+            </div>
+            <!-- seventh container  -->
+            <div class="seventh-container">
+                <div class="email-latter">
+                    <h2 class="email-latter-heading">Fall In Love With New Art</h2>
+                    <div class="main-email-latter-input">
+                        <a class="email-latter-mail-icon" href="#"><i class="fa-regular fa-envelope"></i></a>
+                        <input type="text" class="email-input" placeholder="Your Email Address" required>
+                        <a class="email-latter-arrow-icon" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    <div class="email-term-condition"> <input class="checkbox" type="checkbox"> I accept the terms & conditions and the data proction</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="mainfooter display-flex">
+                <div class="main-box-main-footer-1">
+                    <div class="box-main-footer-1">
+                        <img src="assets/image/dark-logo_1.png" alt="" class="box-1-img-footer">
+                        <p class="box-1-paragraph-footer">Super class, cute, comfortable. You can wear them with just about anything.</p>
+                        <div class="footer-social-icon">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box-main-footer-2">
+                    <div class="box-2-main-footer-2">
+                        <h4 class="box-main-footer-heading">Company</h4>
+                        <p class="box-2-main-footer-paragraph"><i class="fa fa-location-dot"></i>184 Main Rd E, St Albans VIC 3021, Australia</p>
+                        <p class="box-2-main-footer-paragraph"><i class="fa fa-phone"></i>+391 (0)35 2568</p>
+                        <p class="box-2-main-footer-paragraph"><i class="fa fa-envelope"></i>contact@company.com</p>
+                    </div>
+                </div>
+                <div class="main-box-main-footer">
+                    <div class="box-main-footer">
+                        <h4 class="box-main-footer-heading">Information</h4>
+                        <ul>
+                            <li><a class="box-main-footer-list" href="#">My Account</a></li>
+                            <li><a class="box-main-footer-list" href="#">Login</a></li>
+                            <li><a class="box-main-footer-list" href="#"> My Cart</a></li>
+                            <li><a class="box-main-footer-list" href="#">Wishlist</a></li>
+                            <li><a class="box-main-footer-list" href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-box-main-footer">
+                    <div class="box-main-footer">
+                        <h4 class="box-main-footer-heading">Contact</h4>
+                        <ul>
+                            <li><a class="box-main-footer-list" href="#">Customer Service</a></li>
+                            <li><a class="box-main-footer-list" href="#">Store Locator</a></li>
+                            <li><a class="box-main-footer-list" href="#"> Wholesale</a></li>
+                            <li><a class="box-main-footer-list" href="#">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-box-main-footer">
+                    <div class="box-main-footer">
+                        <h4 class="box-main-footer-heading">Follow</h4>
+                        <ul>
+                            <li><a class="box-main-footer-list" href="#">Facebook</a></li>
+                            <li><a class="box-main-footer-list" href="#">Pinterest</a></li>
+                            <li><a class="box-main-footer-list" href="#">Instagram</a></li>
+                            <li><a class="box-main-footer-list" href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // announcement bar times icon
+        $(document).ready(function() {
+            $(".times-icon").click(function() {
+                $(".announcement-bar").slideUp(500);
+            });
+        });
+
+        // main image banner
+        $(document).ready(function() {
+            $('.main-image-banner-slider').slick({
+                draggable: true,
+                arrows: true,
+                dots: true,
+                fade: true,
+                speed: 1800,
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: false,
+            });
+        });
+
+        $(document).ready(function() {
+            $(".rotate").click(function() {
+                $(this).toggleClass("down");
+            })
+            $('#demo-open').click(function() {
+                $('.demo-button-list-1').stop().slideToggle('slow');
+            });
+            $("#shop-open").click(function() {
+                $(".demo-button-list-2").stop().slideToggle('slow');
+            });
+            $("#products-open").click(function() {
+                $(".demo-button-list-3").stop().slideToggle('slow');
+            });
+            $("#blog-open").click(function() {
+                $(".demo-button-list-4").stop().slideToggle('slow');
+            });
+            $("#page-open").click(function() {
+                $(".demo-button-list-5").stop().slideToggle('slow');
+            });
+            $("#usd-open").click(function() {
+                $(".demo-button-list-6").stop().slideToggle('slow');
+            });
+            $('#demo-open').click(function() {
+                $(this).toggleClass('plus');
+                $(this).toggleClass('close');
+            });
+        });
+
+        // left hamburger icon
+        $(document).ready(function() {
+            $(".hamburger-icon svg").click(function() {
+                $(".hamburger-left-button").animate({
+                    width: "toggle"
+                });
+                $(".main-body").addClass("menu-main-body");
+            });
+
+            $(".times-icon-3 ").click(function() {
+                $(".hamburger-left-button").animate({
+                    width: "toggle"
+                });
+                $(".main-body").removeClass("menu-main-body");
+            });
+        });
+        // right hamburger icon
+        $(document).ready(function() {
+            $(".navbar-icon-svg-5").click(function() {
+                $(".hamburger-right-button").animate({
+                    width: "toggle"
+                });
+            });
+
+            $(".times-icon-2 ").click(function() {
+                $(".hamburger-right-button").animate({
+                    width: "toggle"
+                });
+            });
+        });
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 50) {
+                $('.main-header').addClass('fixed-header');
+            } else {
+                $('.main-header').removeClass('fixed-header');
+            }
+        });
+
+        // testimonial slider 
+        $(document).ready(function() {
+            $('.testimonial-slider-container').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: true,
+                dots: true,
+                speed: 500,
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }, {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>

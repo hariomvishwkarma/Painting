@@ -1,0 +1,24 @@
+@media only screen and (max-width:1196px) {
+    .content-navbar {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+        width: 33%;
+    }
+    img.main-logo {
+        width: 53%;
+    }
+    .logo-navigation-bar {
+        text-align: center;
+    }
+    a.navbar-icon-svg-2 {
+        display: none;
+    }
+    .main-navigation-bar {
+        padding: 8px 10px;
+    }
+    .mainfooter.display-flex {
+        width: 1000px;
+    }
+}

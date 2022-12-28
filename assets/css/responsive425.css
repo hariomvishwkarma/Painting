@@ -1,0 +1,25 @@
+@media only screen and (max-width:425px) {
+    img.main-logo {
+        width: 100%;
+    }
+    img.img-main-image {
+        height: 531px;
+    }
+    .content-image-banner {
+        padding-left: 10px;
+        width: 200px;
+    }
+    h2.heading-container-image-banner {
+        font-size: 2.25rem;
+    }
+    p.peragraph-container-image-banner {
+        font-size: 1rem;
+        padding-bottom: 3rem;
+    }
+    h2.fifth-container-right-heading {
+        font-size: 2rem;
+    }
+    .sixth-container {
+        padding: 0 50px;
+    }
+}

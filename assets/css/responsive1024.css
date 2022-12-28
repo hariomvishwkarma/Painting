@@ -1,0 +1,37 @@
+    @media only screen and (max-width:1024px) {
+        img.img-main-image {
+            height: 600px;
+        }
+        .content-image-banner {
+            padding-left: 50px;
+        }
+        .container-painting-prints-shop {
+            display: block;
+            padding: 30px;
+        }
+        .painting-prints-width-50-percent {
+            width: 100%;
+        }
+        .painting-prints-width-50-percent {
+            margin: 0px;
+            margin-bottom: 30px;
+        }
+        .fifth-container-right-content {
+            padding: 0 29px;
+        }
+        .fifth-container {
+            display: block;
+        }
+        .fifth-container-left {
+            width: 100%;
+        }
+        .fifth-container-right {
+            width: 100%;
+        }
+        .fifth-container-right-content {
+            width: 50%;
+        }
+        .mainfooter.display-flex {
+            width: 900px;
+        }
+    }
